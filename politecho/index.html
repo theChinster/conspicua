@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Conspicua</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display" rel="stylesheet">
+
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div id="pt-main" class="pt-perspective container-fluid">
+			<div class="pt-page pt-page-1 gradient">
+				<div class="row">
+					<h1>Conspicua: Expanding perspectives on article at a time</h1>
+					<h5>Find out if filter bubbles exist in your Facebook newsfeed, and help see more new perspectives</h5>
+					<br/>
+					<div class="button">
+					Get started
+					</div>
+				</div>
+					<svg id="home-animation" width="1200" height="200"
+  viewBox="200 0 1200 200" style="width: 100%; height: 200px"
+  preserveAspectRatio="xMidYMid meet"></svg>
+			</div>
+			<div class="pt-page pt-page-2">
+				<div class="row">
+					<div class="gradient"></div>
+					<div class="col-sm-6">
+						<h5 class="politecho">Conspicua</h5>
+						<svg id="load-spinner" width="200" height="200"
+  viewBox="0 0 200 200" style="width: 50%; height: 200px"
+  preserveAspectRatio="xMidYMid meet"></svg>
+					</div>
+					<div class="col-sm-6">
+						<h1>Examining your Facebook feed for echo chambers</h1>
+						<p>While the algorithm runs, consider reading an article about <a target="_blank" href="https://www.theguardian.com/technology/2017/may/22/social-media-election-facebook-filter-bubbles">how filter bubbles</a> affect content exposure and opinions.</p>
+						<p class="js-progress-text"></p>
+						<p class="js-progress-bar progress-bar"></p>
+						<p class="js-render-text"></p>
+						<p class="js-render-bar progress-bar"></p>
+					</div>
+				</div>
+			</div>
+			<div class="pt-page pt-page-3">
+				<div class="row">
+					<div class="col-xs-8">
+						<div class="border-wrap gradient">
+						</div>
+							<h5 class="politecho">Conspicua</h5>
+							<h1>Political leanings of all your friends</h1>
+							<p>
+								Here's the political sentiment of your entire friends list. Each dot represents a person you are friends with. Hover over a dot for more info.
+							</p>
+							<p>
+								<!-- <div class="button back">
+									Back
+								</div> -->
+								<div class="button next">
+									Next
+								</div>
+							</p>
+							<p class="hifrom" style="display: none">
+								<a href="#" class="js-share-fb button">Share Results on Facebook</a> <span class="js-share-fb-progress"></span>
+							</p>
+					</div>
+					<div class="col-xs-4" id="survey">
+<!-- 						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_GviG9PmL9Rg03pBUYTKjRTlvBmjDjoPYbqviNP6vFJBl-w/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+					</div>
+				</div>
+			</div>
+			<div style="font-family: 'Karla', sans-serif; position: fixed; bottom: 5px;">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
+		</div>
+
+		<div class="pt-message">
+			<p>Your browser does not support CSS animations.</p>
+		</div>
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/pagetransitions.js"></script>
+		<script src="js/vendor/rgbcolor.js"></script>
+		<script src="js/vendor/StackBlur.js"></script>
+		<script src="js/vendor/canvg.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/pie.js"></script>
+		<script src="js/home.js"></script>
+	</body>
+</html>
