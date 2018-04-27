@@ -48,7 +48,7 @@ function renderShareImage() {
     canvasOutput.width = 1200;
     canvasOutput.height = 630;
     canvg(canvasOutput, svg);
-    
+
     return Promise.resolve(canvasOutput);
   });
 }
@@ -84,8 +84,8 @@ function showShareDialog(url) {
   // https://developers.facebook.com/docs/sharing/reference/feed-dialog
   var params = {
     name: 'My political bubble',
-    link: 'http://politecho.org',
-    description: 'View your news feed\'s political bias with PolitEcho',
+    link: '',
+    description: 'Broaden your horizon with Conspicua',
     picture: url,
   };
   for (var param in params) {
@@ -116,7 +116,7 @@ $(document).ready(function() {
           data.frequency = Math.random() < 0.3 ? Math.floor(Math.random() * 10 * (1.5 - Math.abs(data.score - 0.3))) : 0;
           return data;
       });
-      
+
       setTimeout(function () {
         loadChart(userData);
       }, 700);
