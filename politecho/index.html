@@ -55,7 +55,7 @@
 						<div class="border-wrap gradient">
 						</div>
 							<h5 class="politecho">Conspicua</h5>
-							<h1>Political leanings of all your friends</h1>
+							<h1 id="lefthand">Political leanings of all your friends</h1>
 							<p>
 								Here's the political sentiment of your entire friends list. Each dot represents a person you are friends with. Hover over a dot for more info.
 							</p>
@@ -69,7 +69,18 @@
 							</p>
 					</div>
 					<div class="col-xs-4" id="survey">
-<!-- 						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_GviG9PmL9Rg03pBUYTKjRTlvBmjDjoPYbqviNP6vFJBl-w/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+						<div id="success" style="display: none;">
+							<h1>Congratulations!</h1>
+							<p>
+								We have detected minimal levels of bias within your facebook feed, and as such there is no further action necessary on your part. Continue to consider other opinions!
+							</p>
+						</div>
+						<div id="failure" style="display: none;">
+							<h1>Unfortunately your feed is a strong filter bubble</h1>
+							<p id="return">
+							</p>
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_GviG9PmL9Rg03pBUYTKjRTlvBmjDjoPYbqviNP6vFJBl-w/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						</div>
 					</div>
 				</div>
 			</div>

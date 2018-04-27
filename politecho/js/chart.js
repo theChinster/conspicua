@@ -88,7 +88,7 @@ function loadChart(userData) {
             .attr("d", area);
 
         $(this).off('click');
-        $('.pt-page-3 h1')
+        $(id="lefthand")
             .css({position: 'relative'})
             .animate({opacity: 0, top: '-10px'}, 200, function () {
                 $(this).text('Political leanings of your news feed')

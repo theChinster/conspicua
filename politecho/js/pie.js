@@ -93,11 +93,20 @@ function pies(userData) {
             .style('left', '0px');
       }
 
-  var column = document.getElementById("survey");
   if (leaning < 0.25 && leaning > 0.25) {
-
+    document.getElementById("success").style = "display : ;";
   } else {
-
+    document.getElementById("failure").style = "display: ;";
+    if (leaning >= 0.25 ) {
+      var article = redArray[Math.floor(Math.random()*redArray.length)];
+      document.getElementById("return").innerHTML = "Unfortunately, the data shows that your Facebook feed has been constructed so as to overemphasize conservative viewpoints."
+       + " You can see a visual representation of this leaning on the graph to the left. Please read <a href='" + article + "'>this article</a> and fill out the below survey";
+    } else {
+      var article = blueArray[Math.floor(Math.random()*blueArray.length)];
+      console.log(article);
+      document.getElementById("return").innerHTML = "Unfortunately, the data shows that your Facebook feed has been constructed so as to overemphasize liberal viewpoints."
+       + " You can see a visual representation of this leaning on the graph to the left. Please read <a href='" + article + "'>this article</a> and fill out the below survey";
+    }
   }
 
 };
